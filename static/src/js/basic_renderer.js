@@ -29,7 +29,8 @@ odoo.define('hsp.BasicRenderer', function (require) {
         // widget's $el
         // console.log(widget.record.model)
         // console.log(widget)
-        // console.log(widget.record.context.lang)
+        // console.log(odoo.session_info.server_version)
+        widget.server_version = odoo.session_info.server_version
         $node = $node.length ? $node : widget.$el;
         $node.tooltip({
             title: function () {

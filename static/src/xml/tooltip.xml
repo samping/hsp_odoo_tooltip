@@ -72,7 +72,8 @@
     </ul>
     <t t-if="widget.name">
         <div style="width:100%">
-            <a  class="h_info" target="_blank" t-attf-href="https://www.garage-kit.com/tooltip_info/#{widget.record.context.lang}/#{widget.record.model}/#{widget.name}">more</a>
+            <a  class="h_info" target="_blank" t-attf-href="https://www.garage-kit.com/#{widget.record.context.lang}
+            /tooltip_info?version=#{widget.server_version}&amp;modules=#{widget.field.modules}&amp;model=#{widget.record.model}&amp;field=#{widget.name}">more</a>
         </div>
     </t>
 </t>
